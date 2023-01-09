@@ -1,0 +1,33 @@
+chcp 65001 // cmd에서 한글깨짐 명령어로 해결
+
+/*
+여러줄 주석
+*/
+//한줄 주석
+
+(변수의 자료형) 변수1, 변수2, .... ; // 변수선언(선언시 최상단, 알파벳, 숫자, _ 만 가능, 예약어 불가능)
+
+    Name        Size    Range
+    -----------------------------------------------------
+    char        1byte   signed: -128 to 127
+                        unsigned: 0 to 255
+    short int   2bytes  signed: -32768 to 32767
+                        unsigned: 0 to 65535
+    int         4bytes  signed: -2147483648 to 2147483647
+                        unsigned: 0 to 4294967295
+    long int    4bytes  signed: -2147483648 to 2147483647
+                        unsigned: 0 to 4294967295
+    bool        1byte   true or false
+    float       4bytes  +/- 3.4e +/- 38 (~7 digits)
+    double      8bytes  +/- 1.7e +/- 308 (~15 digits)
+    long double 8bytes  +/- 1.7e +/- 308 (~15 digits)
+
+//----------호출 함수 stdio.h---------------
+printf(); // 화면 출력 함수
+    %o   // 8진수
+    %d   // 10진수
+    %x   // 16진수
+    %f   // 실수형 변수 출력
+    %.2f // 소수점 지정 출력
+    %5d  // 자리수 맞추어 출력
+
