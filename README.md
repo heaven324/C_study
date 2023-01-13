@@ -2,25 +2,22 @@
 1. ch01
    - [hello](https://github.com/heaven324/C_study/blob/main/code/ch01/hello.c)
 2. ch02
-   - [float](https://github.com/heaven324/C_study/blob/main/code/ch02/float.c)
-   - [variable](https://github.com/heaven324/C_study/blob/main/code/ch02/variable.c)
+   - [float](https://github.com/heaven324/C_study/blob/main/code/ch02/float.c), [variable](https://github.com/heaven324/C_study/blob/main/code/ch02/variable.c)
 3. ch03
-   - [Arithmetic_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Arithmetic_Operator.c)
-   - [Bit_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Bit_Operator.c)
-   - [fix_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/fix_Operator.c)
+   - [Arithmetic_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Arithmetic_Operator.c), [Bit_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Bit_Operator.c), [fix_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/fix_Operator.c)
 
 # Context
-### 한글 깨짐
+## 한글 깨짐
 `chcp 65001 // cmd에서 한글깨짐 명령어로 해결`
 
-### 주석
+## 주석
 /* \
 여러줄 주석 \
 */ \
 //한줄 주석 \
 
 
-### 변수의 자료형
+## 변수의 자료형
 변수1, 변수2, .... ; // 변수선언(선언시 최상단, 알파벳, 숫자, _ 만 가능, 예약어 불가능)
 | Name        | Size   | Range                                                             |
 |:------------|:-------|:------------------------------------------------------------------|
@@ -34,7 +31,7 @@
 | long double | 8bytes | +/- 1.7e +/- 308 (~15 digits)                                     |
 
 
-### 연산자
+## 연산자
 | Operator |                                 |
 |:--------:| :-------------------------------|
 | =        | 대입 연산자(Assignment Operator) |
@@ -44,7 +41,7 @@
 | /        | int형은 정수부분만 남김           |
 | %        | 오직 정수형 데이터만 연산 가능     |
 
-### 비트연산자
+## 비트연산자
 | Operator |              |
 |:--------:|:-------------|
 | &        | AND 연산자   |
@@ -54,7 +51,7 @@
 | <<       | Shift 연산자 |
 | >>       | Shift 연산자 |
 
-### 연산자 우선순위
+## 연산자 우선순위
 | 우선순위 | Operator                                        | 방향       |
 |:-------:|:------------------------------------------------|:----------:|
 | 1       | () [] -> . (expr)++ (expr)--                    | 왼쪽 우선   |
@@ -74,8 +71,8 @@
 | 15      | ,                                               | 왼쪽 우선   |
 
 
-## 호출 함수 
-### stdio.h
+# 호출 함수 
+## stdio.h
 | `printf();` |화면 출력 함수|                       |
 |:------------|:------------|:----------------------|
 |             | %o          | 8진수                 |
