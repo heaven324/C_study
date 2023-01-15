@@ -5,6 +5,8 @@
    - [float](https://github.com/heaven324/C_study/blob/main/code/ch02/float.c), [variable](https://github.com/heaven324/C_study/blob/main/code/ch02/variable.c)
 3. ch03
    - [Arithmetic_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Arithmetic_Operator.c), [Bit_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Bit_Operator.c), [fix_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/fix_Operator.c)
+4. ch04
+   - [char](https://github.com/heaven324/C_study/blob/main/code/ch04/char.c), [scanf](https://github.com/heaven324/C_study/blob/main/code/ch04/scanf.c)
 
 # Context
 ## 한글 깨짐
