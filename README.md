@@ -7,6 +7,11 @@
    - [Arithmetic_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Arithmetic_Operator.c), [Bit_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/Bit_Operator.c), [fix_Operator](https://github.com/heaven324/C_study/blob/main/code/ch03/fix_Operator.c)
 4. ch04
    - [char](https://github.com/heaven324/C_study/blob/main/code/ch04/char.c), [scanf](https://github.com/heaven324/C_study/blob/main/code/ch04/scanf.c)
+5. ch05
+   - [if_state](https://github.com/heaven324/C_study/blob/main/code/ch05/if_state.c)
+5. ch06
+   - [for_state](https://github.com/heaven324/C_study/blob/main/code/ch06/for_state.c), [break_state](https://github.com/heaven324/C_study/blob/main/code/ch06/break_state.c), [continue_state](https://github.com/heaven324/C_study/blob/main/code/ch06/continue_state.c), [while_state](https://github.com/heaven324/C_study/blob/main/code/ch06/while_state.c), [do_while_state](https://github.com/heaven324/C_study/blob/main/code/ch06/do_while_state.c)
+   - [test1](https://github.com/heaven324/C_study/blob/main/code/ch06/test1.c), [test2](https://github.com/heaven324/C_study/blob/main/code/ch06/test2.c), [test3](https://github.com/heaven324/C_study/blob/main/code/ch06/test3.c), [test4](https://github.com/heaven324/C_study/blob/main/code/ch06/test4.c), [test5](https://github.com/heaven324/C_study/blob/main/code/ch06/test5.c), [test6](https://github.com/heaven324/C_study/blob/main/code/ch06/test6.c)
 
 # Context
 ## 한글 깨짐
@@ -34,14 +39,14 @@
 
 
 ## 연산자
-| Operator |                                 |
-|:--------:| :-------------------------------|
+| Operator |                                  |
+|:--------:| :--------------------------------|
 | =        | 대입 연산자(Assignment Operator) |
-| +        |                                 |
-| -        |                                 |
-| *        |                                 |
-| /        | int형은 정수부분만 남김           |
-| %        | 오직 정수형 데이터만 연산 가능     |
+| +        |                                  |
+| -        |                                  |
+| *        |                                  |
+| /        | int형은 정수부분만 남김          |
+| %        | 오직 정수형 데이터만 연산 가능   |
 
 ## 비트연산자
 | Operator |              |
@@ -55,7 +60,7 @@
 
 ## 연산자 우선순위
 | 우선순위 | Operator                                        | 방향       |
-|:-------:|:------------------------------------------------|:----------:|
+|:-------:|:------------------------------------------------|:-----------:|
 | 1       | () [] -> . (expr)++ (expr)--                    | 왼쪽 우선   |
 | 2       | ! ~ +-(부호) *P & sizeof cast --(expr) ++(expr) | 오른쪽 우선 |
 | 3       | * / %                                           | 왼쪽 우선   |
@@ -111,26 +116,54 @@ if (조건문) {
    - 조건문에 논리연산자 (&& : AND, || : OR)로 두 조건을 붙여서 사용 가능
    - 조건문사용시 (!(조건문))을 입력하면 조건문의 결과(bool값)의 반대로 리턴.
 
+## for문(for statement)
+```c
+for ( <초기식>; <조건식>, <증감식>) {
+   명령1;
+   명령2;
+   break; // 조건식과 무관하게 for문을 빠져나옴
+   continue; // 다음 반복문으로 넘어감
+}
+```
+
+## while문
+- 조건식이 참인지 먼저 검사 후 명령 진행.
+```c
+while ( <조건식> ) {
+   명령1;
+   명령2;
+}
+```
+
+## do-while문
+- 명령 진행 후 조건식이 참인지 검사.
+```c
+do {
+   명령1;
+   명령2;
+} while ( <조건식> );
+```
+
 # 호출 함수 
 ## stdio.h
 | `printf();` |화면 출력 함수|                       |
-|:------------|:------------|:----------------------|
-|             | %o          | 8진수                 |
-|             | %d          | 10진수                |
-|             | %x          | 16진수                |
+|:------------|:------------|:-----------------------|
+|             | %o          | 8진수                  |
+|             | %d          | 10진수                 |
+|             | %x          | 16진수                 |
 |             | %f          | 실수형 변수 출력       |
 |             | %.2f        | 소수점 지정 출력       |
 |             | %5d         | 자리수 맞추어 출력     |
 |             | %%          | %를 문자로 출력        |
 |             | %u          | unsigned 타입으로 해석 |
 
-| `scanf();` |화면 입력 함수|                       |
-|:-----------|:------------|:----------------------|
-|            | &변수       | 해당 변수에 할당        |
-|            | %c          | char                  |
-|            | %hd         | short                 |
-|            | %d          | int                   |
-|            | %ld         | long                  |
-|            | %f          | float                 |
-|            | %lf         | double                |
+| `scanf();` |화면 입력 함수|                 |
+|:-----------|:------------|:-----------------|
+|            | &변수       | 해당 변수에 할당 |
+|            | %c          | char             |
+|            | %hd         | short            |
+|            | %d          | int              |
+|            | %ld         | long             |
+|            | %f          | float            |
+|            | %lf         | double           |
 
