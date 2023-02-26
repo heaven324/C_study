@@ -144,6 +144,29 @@ do {
 } while ( <조건식> );
 ```
 
+## switch 문
+- jump table로 비교 CMP연산을 진행하기 때문에 if-else보다 효율성에서 차이가 있을 수 있다.
+- switch문에 사용될 변수로는 반드시 정수가 들어가야 한다.(char, short, int, long)
+  - jump table로 연산을 진행하기 때문이다.
+- '값'에 위치하는 것들이 무조건 상수여야 한다.
+  - '값'부분에 변수가 들어가면 jump table에 무엇이 올 지 알 수 없음.
+- `break;`의 역할은 모든 case를 무시하고 switch밖으로 빠져나가기 위함임.
+
+```c
+switch (/*변수*/) {
+   case /*값1*/;
+       // 명령들;
+       break;
+   case /*값2*/;
+       // 명령들;
+       break;
+   //...
+   default;
+       // 명령들;
+       break;
+}
+```
+
 # 호출 함수 
 ## stdio.h
 | `printf();` |화면 출력 함수|                       |
