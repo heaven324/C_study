@@ -12,6 +12,13 @@
 5. ch06
    - [for_state](https://github.com/heaven324/C_study/blob/main/code/ch06/for_state.c), [break_state](https://github.com/heaven324/C_study/blob/main/code/ch06/break_state.c), [continue_state](https://github.com/heaven324/C_study/blob/main/code/ch06/continue_state.c), [while_state](https://github.com/heaven324/C_study/blob/main/code/ch06/while_state.c), [do_while_state](https://github.com/heaven324/C_study/blob/main/code/ch06/do_while_state.c)
    - [test1](https://github.com/heaven324/C_study/blob/main/code/ch06/test1.c), [test2](https://github.com/heaven324/C_study/blob/main/code/ch06/test2.c), [test3](https://github.com/heaven324/C_study/blob/main/code/ch06/test3.c), [test4](https://github.com/heaven324/C_study/blob/main/code/ch06/test4.c), [test5](https://github.com/heaven324/C_study/blob/main/code/ch06/test5.c), [test6](https://github.com/heaven324/C_study/blob/main/code/ch06/test6.c)
+6. ch07
+   - [switch_state](https://github.com/heaven324/C_study/blob/main/code/ch07/switch_state.c)
+7. ch08
+   - [test](https://github.com/heaven324/C_study/blob/main/code/ch08/test.c)
+8. ch09
+   - [basic_array](https://github.com/heaven324/C_study/blob/main/code/ch09/basic_array.c), [input_array](https://github.com/heaven324/C_study/blob/main/code/ch09/input_array.c), [array_for_state](https://github.com/heaven324/C_study/blob/main/code/ch09/array_for_state.c), [const](https://github.com/heaven324/C_study/blob/main/code/ch09/const.c), [multi_array](https://github.com/heaven324/C_study/blob/main/code/ch09/multi_array.c)
+   - [test1](https://github.com/heaven324/C_study/blob/main/code/ch09/test1.c),[test2](https://github.com/heaven324/C_study/blob/main/code/ch09/test2.c)
 
 # Context
 ## 한글 깨짐
@@ -166,6 +173,22 @@ switch (/*변수*/) {
        break;
 }
 ```
+
+## 배열
+정의
+- (배열의 형) (베열 이름)[원소 개수];
+  - ex) `int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};`
+
+동적 할당을 하지않는 이상 기본적으로 배열의 크기는 변수로 지정할 수 없다.
+
+### 상수
+- 정의시 그 값이 바로 주어지고, 그 값이 영원히 바뀌지 않는 수.
+- `const (상수의 형) (상수 이름) = (상수의 값);`
+  - ex) `const int a = 3;`
+
+### 다차원 배열
+- (배열의 형) (베열 이름)[원소 개수][원소 개수]...;
+- C 에서는 다차원 배열의 경우 맨 앞의 크기를 제외한 나머지 크기들을 정확히 지정해줘야 오류가 발생하지 않는다.
 
 # 호출 함수 
 ## stdio.h
