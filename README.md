@@ -9,16 +9,19 @@
    - [char](https://github.com/heaven324/C_study/blob/main/code/ch04/char.c), [scanf](https://github.com/heaven324/C_study/blob/main/code/ch04/scanf.c)
 5. ch05
    - [if_state](https://github.com/heaven324/C_study/blob/main/code/ch05/if_state.c)
-5. ch06
+6. ch06
    - [for_state](https://github.com/heaven324/C_study/blob/main/code/ch06/for_state.c), [break_state](https://github.com/heaven324/C_study/blob/main/code/ch06/break_state.c), [continue_state](https://github.com/heaven324/C_study/blob/main/code/ch06/continue_state.c), [while_state](https://github.com/heaven324/C_study/blob/main/code/ch06/while_state.c), [do_while_state](https://github.com/heaven324/C_study/blob/main/code/ch06/do_while_state.c)
    - [test1](https://github.com/heaven324/C_study/blob/main/code/ch06/test1.c), [test2](https://github.com/heaven324/C_study/blob/main/code/ch06/test2.c), [test3](https://github.com/heaven324/C_study/blob/main/code/ch06/test3.c), [test4](https://github.com/heaven324/C_study/blob/main/code/ch06/test4.c), [test5](https://github.com/heaven324/C_study/blob/main/code/ch06/test5.c), [test6](https://github.com/heaven324/C_study/blob/main/code/ch06/test6.c)
-6. ch07
+7. ch07
    - [switch_state](https://github.com/heaven324/C_study/blob/main/code/ch07/switch_state.c)
-7. ch08
+8. ch08
    - [test](https://github.com/heaven324/C_study/blob/main/code/ch08/test.c)
-8. ch09
+9. ch09
    - [basic_array](https://github.com/heaven324/C_study/blob/main/code/ch09/basic_array.c), [input_array](https://github.com/heaven324/C_study/blob/main/code/ch09/input_array.c), [array_for_state](https://github.com/heaven324/C_study/blob/main/code/ch09/array_for_state.c), [const](https://github.com/heaven324/C_study/blob/main/code/ch09/const.c), [multi_array](https://github.com/heaven324/C_study/blob/main/code/ch09/multi_array.c)
    - [test1](https://github.com/heaven324/C_study/blob/main/code/ch09/test1.c),[test2](https://github.com/heaven324/C_study/blob/main/code/ch09/test2.c)
+10. ch10
+    - [unary_operater](https://github.com/heaven324/C_study/blob/main/code/ch10/unary_operater.c), [input_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/input_pointer.c), [value_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/value_pointer.c)
+
 
 # Context
 ## 한글 깨짐
@@ -125,7 +128,7 @@ if (조건문) {
 
 ## for문(for statement)
 ```c
-for ( <초기식>; <조건식>, <증감식>) {
+for ( <초기식>; <조건식>; <증감식>) {
    명령1;
    명령2;
    break; // 조건식과 무관하게 for문을 빠져나옴
@@ -202,6 +205,7 @@ switch (/*변수*/) {
 |             | %5d         | 자리수 맞추어 출력     |
 |             | %%          | %를 문자로 출력        |
 |             | %u          | unsigned 타입으로 해석 |
+|             | %p          | 메모리 주소 표기       |
 
 | `scanf();` |화면 입력 함수|                 |
 |:-----------|:------------|:-----------------|
