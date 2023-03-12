@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int i, num = 2000, cnt = 1, result = 0;
+    int i, num = 100, cnt = 1, result = 0;
 
     for (i = 1; i < num; i++) {
         if ( (num - i) % 2 == 0 ) {

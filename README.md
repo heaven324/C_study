@@ -20,7 +20,7 @@
    - [basic_array](https://github.com/heaven324/C_study/blob/main/code/ch09/basic_array.c), [input_array](https://github.com/heaven324/C_study/blob/main/code/ch09/input_array.c), [array_for_state](https://github.com/heaven324/C_study/blob/main/code/ch09/array_for_state.c), [const](https://github.com/heaven324/C_study/blob/main/code/ch09/const.c), [multi_array](https://github.com/heaven324/C_study/blob/main/code/ch09/multi_array.c)
    - [test1](https://github.com/heaven324/C_study/blob/main/code/ch09/test1.c),[test2](https://github.com/heaven324/C_study/blob/main/code/ch09/test2.c)
 10. ch10
-    - [unary_operater](https://github.com/heaven324/C_study/blob/main/code/ch10/unary_operater.c), [input_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/input_pointer.c), [value_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/value_pointer.c)
+    - [unary_operater](https://github.com/heaven324/C_study/blob/main/code/ch10/unary_operater.c), [input_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/input_pointer.c), [value_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/value_pointer.c), [pointer_add](https://github.com/heaven324/C_study/blob/main/code/ch10/pointer_add.c), [const_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/const_pointer.c), [array_pointer1](https://github.com/heaven324/C_study/blob/main/code/ch10/array_pointer1.c), [use_array_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/use_array_pointer.c), [array_pointer2](https://github.com/heaven324/C_study/blob/main/code/ch10/array_pointer2.c), [pointer_to_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/pointer_to_pointer.c), [pointer_array](https://github.com/heaven324/C_study/blob/main/code/ch10/pointer_array.c)
 
 
 # Context
@@ -192,6 +192,10 @@ switch (/*변수*/) {
 ### 다차원 배열
 - (배열의 형) (베열 이름)[원소 개수][원소 개수]...;
 - C 에서는 다차원 배열의 경우 맨 앞의 크기를 제외한 나머지 크기들을 정확히 지정해줘야 오류가 발생하지 않는다.
+
+### 포인터
+- 주소값을 가지는 변수
+- 포인터 배열 : 포인터들의 배열(배열 포인터와는 다른 것)
 
 # 호출 함수 
 ## stdio.h
