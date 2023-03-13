@@ -21,8 +21,8 @@
    - [test1](https://github.com/heaven324/C_study/blob/main/code/ch09/test1.c),[test2](https://github.com/heaven324/C_study/blob/main/code/ch09/test2.c)
 10. ch10
     - [unary_operater](https://github.com/heaven324/C_study/blob/main/code/ch10/unary_operater.c), [input_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/input_pointer.c), [value_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/value_pointer.c), [pointer_add](https://github.com/heaven324/C_study/blob/main/code/ch10/pointer_add.c), [const_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/const_pointer.c), [array_pointer1](https://github.com/heaven324/C_study/blob/main/code/ch10/array_pointer1.c), [use_array_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/use_array_pointer.c), [array_pointer2](https://github.com/heaven324/C_study/blob/main/code/ch10/array_pointer2.c), [pointer_to_pointer](https://github.com/heaven324/C_study/blob/main/code/ch10/pointer_to_pointer.c), [pointer_array](https://github.com/heaven324/C_study/blob/main/code/ch10/pointer_array.c)
-
-
+11. ch11
+   - [basic_function](https://github.com/heaven324/C_study/blob/main/code/ch11/basic_function.c)
 # Context
 ## 한글 깨짐
 `chcp 65001 // cmd에서 한글깨짐 명령어로 해결`
@@ -196,6 +196,13 @@ switch (/*변수*/) {
 ### 포인터
 - 주소값을 가지는 변수
 - 포인터 배열 : 포인터들의 배열(배열 포인터와는 다른 것)
+
+### 함수
+```c
+(함수 타입) 함수명((인자 타입) 인자1, (인자 타입) 인자2, ...) {
+    body
+}
+```
 
 # 호출 함수 
 ## stdio.h
