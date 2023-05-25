@@ -30,7 +30,7 @@
     - [change_string](https://github.com/heaven324/C_study/blob/main/code/ch13/change_string.c), [count_string](https://github.com/heaven324/C_study/blob/main/code/ch13/count_string.c), [input_string](https://github.com/heaven324/C_study/blob/main/code/ch13/input_string.c), [Null_string](https://github.com/heaven324/C_study/blob/main/code/ch13/Null_string.c), [start_string](https://github.com/heaven324/C_study/blob/main/code/ch13/start_string.c), [string_function](https://github.com/heaven324/C_study/blob/main/code/ch13/string_function.c)
     - [test](https://github.com/heaven324/C_study/blob/main/code/ch13/test.c), [test1](https://github.com/heaven324/C_study/blob/main/code/ch13/test1.c)
 14. ch14
-    - [struct_init](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_init.c), [struct_example](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_example.c), [struct_pointer](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_pointer.c), [struct_substitute](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_substitute.c), [struct_function_argument](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_function_argument.c), [struct_inside_struct](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_inside_struct.c), [struct_return](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_return.c), [struct_diff_define](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_diff_define.c), [struct_initialize](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_initialize.c)
+    - [struct_init](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_init.c), [struct_example](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_example.c), [struct_pointer](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_pointer.c), [struct_substitute](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_substitute.c), [struct_function_argument](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_function_argument.c), [struct_inside_struct](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_inside_struct.c), [struct_return](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_return.c), [struct_diff_define](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_diff_define.c), [struct_initialize](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_initialize.c), [struct_union](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_union.c), [enum_example](https://github.com/heaven324/C_study/blob/main/code/ch14/enum_example.c)
 
 # Context
 ## 한글 깨짐
@@ -261,6 +261,8 @@ struct 구조체이름 {
    - `ptr->구조체변수 = = 내용;`
 - 구조체를 함수의 인자로 전달 후 수정하려면 포인터형식으로 전달해야한다.
 - 구조체 안에 구조체도 정의 할 수 있다.(사용자가 정의한 또다른 type이기 때문)
+- 공용체는 구조체와 비슷하지만 내부 메모리를 공유한다.
+- 열거형은 메모리를 차지하지 않고, 컴파일시 해당 숫자로 변경한다.
 
 # 호출 함수 
 ## stdio.h
