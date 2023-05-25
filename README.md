@@ -24,6 +24,13 @@
 11. ch11
    - [basic_function](https://github.com/heaven324/C_study/blob/main/code/ch11/basic_function.c), [function_use_pointer](https://github.com/heaven324/C_study/blob/main/code/ch11/function_use_pointer.c), [function_prototype](https://github.com/heaven324/C_study/blob/main/code/ch11/function_prototype.c), [function_use_array](https://github.com/heaven324/C_study/blob/main/code/ch11/function_use_array.c), [function_use_double_pointer](https://github.com/heaven324/C_study/blob/main/code/ch11/function_use_double_pointer.c), [function_use_2d_array](https://github.com/heaven324/C_study/blob/main/code/ch11/function_use_2d_array.c), [function_pointer](https://github.com/heaven324/C_study/blob/main/code/ch11/function_pointer.c)
    - [test1](https://github.com/heaven324/C_study/blob/main/code/ch11/test1.c), [test2](https://github.com/heaven324/C_study/blob/main/code/ch11/test2.c), [test3](https://github.com/heaven324/C_study/blob/main/code/ch11/test3.c)
+12. ch12
+   - [Debugging.c](https://github.com/heaven324/C_study/blob/main/code/ch12/Debugging.c)
+13. ch13
+   - [change_string](https://github.com/heaven324/C_study/blob/main/code/ch13/change_string.c), [count_string](https://github.com/heaven324/C_study/blob/main/code/ch13/count_string.c), [input_string](https://github.com/heaven324/C_study/blob/main/code/ch13/input_string.c), [Null_string](https://github.com/heaven324/C_study/blob/main/code/ch13/Null_string.c), [start_string](https://github.com/heaven324/C_study/blob/main/code/ch13/start_string.c), [string_function](https://github.com/heaven324/C_study/blob/main/code/ch13/string_function.c)
+   - [test](https://github.com/heaven324/C_study/blob/main/code/ch13/test.c), [test1](https://github.com/heaven324/C_study/blob/main/code/ch13/test1.c)
+14. ch14
+   - [struct_init](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_init.c), [struct_example](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_example.c), [struct_pointer](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_pointer.c), [struct_substitute](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_substitute.c), [struct_function_argument](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_function_argument.c), 
 
 # Context
 ## 한글 깨짐
@@ -249,6 +256,10 @@ struct 구조체이름 {
 ```
 - 구조체 내부에서 변수의 초기화는 불가능.
 - 구조체도 배열의 형식으로 선언할 수 있음.
+- 다음 두 방법으로 구조체 포인터로 접근할 수 있음.
+   - `(*ptr).구조체변수 = 내용;`
+   - `ptr->구조체변수 = = 내용;`
+- 구조체를 함수의 인자로 전달 후 수정하려면 포인터형식으로 전달해야한다.
 
 # 호출 함수 
 ## stdio.h
