@@ -31,10 +31,18 @@
     - [test](https://github.com/heaven324/C_study/blob/main/code/ch13/test.c), [test1](https://github.com/heaven324/C_study/blob/main/code/ch13/test1.c)
 14. ch14
     - [struct_init](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_init.c), [struct_example](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_example.c), [struct_pointer](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_pointer.c), [struct_substitute](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_substitute.c), [struct_function_argument](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_function_argument.c), [struct_inside_struct](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_inside_struct.c), [struct_return](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_return.c), [struct_diff_define](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_diff_define.c), [struct_initialize](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_initialize.c), [struct_union](https://github.com/heaven324/C_study/blob/main/code/ch14/struct_union.c), [enum_example](https://github.com/heaven324/C_study/blob/main/code/ch14/enum_example.c)
+15. ch15
+    - [global_variable](https://github.com/heaven324/C_study/blob/main/code/ch15/global_variable.c), [static_variable](https://github.com/heaven324/C_study/blob/main/code/ch15/static_variable.c)
+16. ch16
+   - [basic_example](https://github.com/heaven324/C_study/blob/main/code/ch16/basic_example.c), [struct_in_header](https://github.com/heaven324/C_study/blob/main/code/ch16/struct_in_header.c), [use_library](https://github.com/heaven324/C_study/blob/main/code/ch16/use_library.c), [preprocesser](https://github.com/heaven324/C_study/blob/main/code/ch16/preprocesser.c), 
+
+</br>
 
 # Context
 ## 한글 깨짐
 `chcp 65001 // cmd에서 한글깨짐 명령어로 해결`
+
+</br>
 
 ## 주석
 /* \
@@ -42,6 +50,8 @@
 */ \
 //한줄 주석 \
 
+
+</br>
 
 ## 변수의 자료형
 변수1, 변수2, .... ; // 변수선언(선언시 최상단, 알파벳, 숫자, _ 만 가능, 예약어 불가능)
@@ -57,6 +67,8 @@
 | long double | 8bytes | +/- 1.7e +/- 308 (~15 digits)                                     |
 
 
+</br>
+
 ## 연산자
 | Operator |                                  |
 |:--------:| :--------------------------------|
@@ -67,6 +79,8 @@
 | /        | int형은 정수부분만 남김          |
 | %        | 오직 정수형 데이터만 연산 가능   |
 
+</br>
+
 ## 비트연산자
 | Operator |              |
 |:--------:|:-------------|
@@ -76,6 +90,8 @@
 | ~        | 반전 연산자  |
 | <<       | Shift 연산자 |
 | >>       | Shift 연산자 |
+
+</br>
 
 ## 연산자 우선순위
 | 우선순위 | Operator                                        | 방향       |
@@ -95,6 +111,8 @@
 | 13      | ? :                                             | 오른쪽 우선 |
 | 14      | =                                               | 오른쪽 우선 |
 | 15      | ,                                               | 왼쪽 우선   |
+
+</br>
 
 ## 문자(ASCII 코드 표 : *American Standard Code for Information*)
 | Decimal | ASCII | Decimal | ASCII | Decimal | ASCII | Decimal | ASCII | Decimal | ASCII | Decimal | ASCII |
@@ -122,6 +140,8 @@
 | 20      | SC4   | 42      | *     | 64      | @     | 86      | V     | 108     | l     |         |       |
 | 21      | NAK   | 43      | +     | 65      | A     | 87      | W     | 109     | m     |         |       |
 
+</br>
+
 ## 조건문
 ```c
 if (조건문) { 
@@ -135,6 +155,8 @@ if (조건문) {
    - 조건문에 논리연산자 (&& : AND, || : OR)로 두 조건을 붙여서 사용 가능
    - 조건문사용시 (!(조건문))을 입력하면 조건문의 결과(bool값)의 반대로 리턴.
 
+</br>
+
 ## for문(for statement)
 ```c
 for ( <초기식>; <조건식>; <증감식>) {
@@ -145,6 +167,8 @@ for ( <초기식>; <조건식>; <증감식>) {
 }
 ```
 
+</br>
+
 ## while문
 - 조건식이 참인지 먼저 검사 후 명령 진행.
 ```c
@@ -154,6 +178,8 @@ while ( <조건식> ) {
 }
 ```
 
+</br>
+
 ## do-while문
 - 명령 진행 후 조건식이 참인지 검사.
 ```c
@@ -162,6 +188,8 @@ do {
    명령2;
 } while ( <조건식> );
 ```
+
+</br>
 
 ## switch 문
 - jump table로 비교 CMP연산을 진행하기 때문에 if-else보다 효율성에서 차이가 있을 수 있다.
@@ -186,6 +214,8 @@ switch (/*변수*/) {
 }
 ```
 
+</br>
+
 ## 배열
 정의
 - (배열의 형) (베열 이름)[원소 개수];
@@ -193,18 +223,26 @@ switch (/*변수*/) {
 
 동적 할당을 하지않는 이상 기본적으로 배열의 크기는 변수로 지정할 수 없다.
 
+</br>
+
 ### 상수
 - 정의시 그 값이 바로 주어지고, 그 값이 영원히 바뀌지 않는 수.
 - `const (상수의 형) (상수 이름) = (상수의 값);`
   - ex) `const int a = 3;`
 
+</br>
+
 ### 다차원 배열
 - (배열의 형) (베열 이름)[원소 개수][원소 개수]...;
 - C 에서는 다차원 배열의 경우 맨 앞의 크기를 제외한 나머지 크기들을 정확히 지정해줘야 오류가 발생하지 않는다.
 
+</br>
+
 ### 포인터
 - 주소값을 가지는 변수
 - 포인터 배열 : 포인터들의 배열(배열 포인터와는 다른 것)
+
+</br>
 
 ### 함수
 ```c
@@ -214,6 +252,8 @@ switch (/*변수*/) {
 ```
 - 포인터 인자 함수는 직접적으로 해당 변수의 주소의 값을 변경해서, 함수 밖에서도 변경된 값이 유지.
 - 더블 포인터 인자 함수는 해당 변수를 가리키는 포인터의 주소를 변경해서, 해당 변수는 변화 없되, 가리키는 포인터를 변경.
+
+</br>
 
 ### 디버깅(gdb)
 ```shell
@@ -236,17 +276,23 @@ gdb 실행파일.exe
 | `kill`                      | 프로그램 수행 강제 종료                                                               |
 | `quit`                      | 또는 `q` gdb 디버거 종료                                                              |
 
+</br>
+
 ### 문자열
 | 따옴표 정리 | |
 |:---------|:---|
 | 큰따옴표는 문자열 (한 개 이상의 문자)를 지정할 때 사용된다. | 작은 따옴표는 한 개의 문자를 지정할 때 사용된다. |
 | 예) "abd", "asdfasdf", "sentence", "a" 등등 | 예) 'a', 'b', '\0' (틀린표현 : 'abc', 'ab', 'cd' 등등) |
 
+</br>
+
 ### 버퍼
 - stdin으로 얻어올 때 `' ', '\n', '\t'`를 만날때 까지 얻어온다
 - 리터럴 : 소스 코드 상에서 고정된 값을 가지는 것
    - C언어의 경우 큰 따옴표(")로 묶인 것들을 문자열 리터럴(string literal) 이라고 부른다.
    - 문자열 리터럴은 메모리의 특별한 공간에서 보호받고, 읽기만 가능하다.(상수와 같은 공간)
+
+</br>
 
 ### 구조체
 ```c
@@ -263,6 +309,36 @@ struct 구조체이름 {
 - 구조체 안에 구조체도 정의 할 수 있다.(사용자가 정의한 또다른 type이기 때문)
 - 공용체는 구조체와 비슷하지만 내부 메모리를 공유한다.
 - 열거형은 메모리를 차지하지 않고, 컴파일시 해당 숫자로 변경한다.
+
+</br>
+
+### 변수 생존 조건
+- 전역변수는 프로그램 단위로 사용 가능한 변수.
+- 지역변수는 함수나 `{}` 단위로 사용가능한 변수.
+- 정적변수는 함수 내에서 선언했지만 지역을 빠져나가도 파괴되지 않는 변수.
+  - 초기화 코드가 반복되더라도 최초 1번만 초기화 되는 것이 특징.
+
+</br>
+
+### 데이터 세그먼트 구조
+| 인메모리 구조                                      |
+|:--------------------------------------------------:|
+| `최 상 단`                                         |
+| `스택(Stack)` </br> 지역 변수가 위치               |
+| `힙(Heap)`                                         |
+| `데이터 영역` </br> 전역 변수와 정적 변수가 위치   |
+| `Read-Only Data` </br> 상수와 리터럴들이 여기 위치 |
+| `코드 영역(Code Segment)`                          |
+
+</br>
+
+### 헤더파일
+- 헤더파일 안에 쓸 수 있는 것들
+  - 전역 변수
+  - 구조체, 공요체, 열거형
+  - 함수의 원형
+  - 일부 특정한 함수(인라인 함수)
+  - 매크로
 
 # 호출 함수 
 ## stdio.h

@@ -71,7 +71,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${fileDirname}/*${fileExtname}",
                 "-o",
                 "F:\\etc\\study\\C\\a.exe"
             ],
