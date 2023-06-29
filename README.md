@@ -34,8 +34,12 @@
 15. ch15
     - [global_variable](https://github.com/heaven324/C_study/blob/main/code/ch15/global_variable.c), [static_variable](https://github.com/heaven324/C_study/blob/main/code/ch15/static_variable.c)
 16. ch16
-   - [basic_example](https://github.com/heaven324/C_study/blob/main/code/ch16/basic_example.c), [struct_in_header](https://github.com/heaven324/C_study/blob/main/code/ch16/struct_in_header.c), [use_library](https://github.com/heaven324/C_study/blob/main/code/ch16/use_library.c), [preprocesser](https://github.com/heaven324/C_study/blob/main/code/ch16/preprocesser.c), 
-
+   - [basic_example](https://github.com/heaven324/C_study/blob/main/code/ch16/basic_example.c), [struct_in_header](https://github.com/heaven324/C_study/blob/main/code/ch16/struct_in_header.c), [use_library](https://github.com/heaven324/C_study/blob/main/code/ch16/use_library.c), [preprocesser](https://github.com/heaven324/C_study/blob/main/code/ch16/preprocesser.c)
+17. ch17
+   - [main_argument](https://github.com/heaven324/C_study/blob/main/code/ch17/main_argument.c), [void_example](https://github.com/heaven324/C_study/blob/main/code/ch17/void_example.c)
+   - [test](https://github.com/heaven324/C_study/blob/main/code/ch17/test.c)
+18. ch18
+   - [malloc](https://github.com/heaven324/C_study/blob/main/code/ch18/malloc.c), [2dim_malloc](https://github.com/heaven324/C_study/blob/main/code/ch18/2dim_malloc.c), [struct_malloc](https://github.com/heaven324/C_study/blob/main/code/ch18/struct_malloc.c), [node](https://github.com/heaven324/C_study/blob/main/code/ch18/node.c)
 </br>
 
 # Context
@@ -365,3 +369,8 @@ struct 구조체이름 {
 |            | %lf         | double           |
 
 `getchar()`함수 : stdin에서 한 문자를 읽어서 그 값을 리턴한다.
+
+## string.h
+`memcpy()`함수 : 메모리의 특정부분을 복사.
+`memmve()`함수 : 메모리 특정 부분을 복사하지만, 공간이 겹쳐도 가능.
+`memcmp()`함수 : 메모리의 두 부분을 원하는 만큼 비교.
