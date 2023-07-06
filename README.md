@@ -40,6 +40,9 @@
    - [test](https://github.com/heaven324/C_study/blob/main/code/ch17/test.c)
 18. ch18
    - [malloc](https://github.com/heaven324/C_study/blob/main/code/ch18/malloc.c), [2dim_malloc](https://github.com/heaven324/C_study/blob/main/code/ch18/2dim_malloc.c), [struct_malloc](https://github.com/heaven324/C_study/blob/main/code/ch18/struct_malloc.c), [node](https://github.com/heaven324/C_study/blob/main/code/ch18/node.c)
+19. ch19
+   - [macro_function](https://github.com/heaven324/C_study/blob/main/code/ch19/macro_function.c), [inline_function](https://github.com/heaven324/C_study/blob/main/code/ch19/inline_function.c)
+
 </br>
 
 # Context
@@ -343,6 +346,20 @@ struct 구조체이름 {
   - 함수의 원형
   - 일부 특정한 함수(인라인 함수)
   - 매크로
+
+</br>
+
+### 매크로 함수
+- `#define`으로 함수를 정의
+- `#define`의 사용법에 따라서 실제 함수처럼 동작하는 것 처럼 보이지만, 전처리기 수준에서 치환되는 것(유의점)
+- `#`을 사용한다는 것은 기본적으로 문자열로 치환한다는 뜻
+- `##`은 입력된 것을 하나로 합친다
+
+### 인라인 함수
+- `__inline`으로 시작한다.
+- 매크로 함수처럼 전처리단에서 치환한다.
+- 매크로 함수처럼 무식하게 치환하지 않고, 실제 함수를 사용하는 것에 가깝게 치환함.
+- 간단한 함수를 작성한다면 inline이 호출과정이 없어 더 빠르다.
 
 # Library
 ## stdio.h
